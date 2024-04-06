@@ -4,12 +4,10 @@ const path = require("path");
 
 // Middleware para servir archivos estáticos
 app.use(express.static(path.join(__dirname, "../public")));
-app.use(express.static(path.join(__dirname, "../express-view")));
 
-app.get("/express", (req, res) => res.sendFile(path.join(__dirname, "../express-view/index.html")));
+app.get("/express", (req, res) => res.sendFile(path.join(__dirname, "../public/express/index.html")));
 app.get("/dom", (req, res) => res.sendFile(path.join(__dirname, "../public/dom/index.html")));
 app.get("/cliente_servidor", (req, res) => res.send("Cliente Servidor on Vercel!"));
-
 
 app.listen(3001, () => console.log("Server ready on port 3001."));
 
