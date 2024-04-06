@@ -1,0 +1,28 @@
+body {
+    background-color: #3B82F6; 
+}
+.centered-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.table-container {
+    background-color: #F2F4F3;
+    padding: 30px;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #0B0A07;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
