@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Express</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-blue-500 p-2">
+        <div class="min-h-screen flex items-center justify-center">
+            <div class="bg-white p-6 rounded-lg shadow-md overflow-x-auto">
+                <h1 class="text-center mb-8 text-4xl font-bold">LISTADO DE COMPRAS</h1>
+                <table class="table-auto w-full whitespace-no-wrap">
+                    <thead>
+                        <tr class="border">
+                            <th class="px-5 py-3 border">Criptomoneda</th>
+                            <th class="px-5 py-3 border">Precio</th>
+                            <th class="px-5 py-3 border">Cantidad</th>
+                            <th class="px-5 py-3 border">Direccion de Wallet</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% data.forEach(item => { %>
+                            <tr>
+                                <td class="border px-5 py-3"><%= item.criptomoneda %></td>
+                                <td class="border px-5 py-3"><%= item.precio %></td>
+                                <td class="border px-5 py-3"><%= item.cantidad %></td>
+                                <td class="border px-5 py-3"><%= item.direccion %></td>
+                            </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
