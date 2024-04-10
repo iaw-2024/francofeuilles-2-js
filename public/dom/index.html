@@ -5,9 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listado DOM</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../dom/style.css"> <!-- Utilizo el mismo style.css de la solucion de Express -->
+    <link rel="stylesheet" href="../dom/style.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../express">EXPRESS</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">DOM <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../cliente_servidor">CLIENTE-SERVIDOR</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="centered-table">
         <div class="table-container table-striped table-responsive">
             <h1>LISTADO DE COMPRAS</h1>
@@ -17,7 +37,7 @@
                         <th>Criptomoneda</th>
                         <th>Precio</th>
                         <th>Cantidad</th>
-                        <th>Direccion de Wallet</th>
+                        <th>Dirección de la Cartera</th>
                     </tr>
                 </thead>
                 <tbody>
