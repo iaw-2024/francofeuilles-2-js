@@ -1,0 +1,35 @@
+body {
+    background-color: #3B82F6; 
+}
+
+.table-container {
+    background-color: #FFFFFF;
+    padding: 30px;
+    max-width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    margin: 20px auto;
+}
+
+h1 {
+    color: #0B0A07;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+@media (max-width: 576px) { /* Estilos específicos para dispositivos móviles de baja resolución */
+    .table-container {
+        max-width: 90%; /* Reducimos el ancho para adaptarlo a la pantalla móvil */
+    }
+}
+
+.font-roboto-flex {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+th {
+    background-color: #BFDBFE;
+}
