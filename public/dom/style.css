@@ -5,7 +5,7 @@ body {
 .table-container {
     background-color: #FFFFFF;
     padding: 30px;
-    max-width: 700px;
+    max-width: 1100px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
     margin: 20px auto;
@@ -24,4 +24,12 @@ h1 {
     .table-container {
         max-width: 90%; /* Reducimos el ancho para adaptarlo a la pantalla móvil */
     }
+}
+
+.font-roboto-flex {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+th {
+    background-color: #BFDBFE;
 }

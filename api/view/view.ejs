@@ -30,27 +30,27 @@
             </div>
         </div>
     </nav>
-    <div class="bg-blue-500 p-4">
+    <div class="bg-blue-500 p-2">
         <div class="min-h-screen flex items-center justify-center">
-            <div class="bg-white p-6 rounded-lg shadow-md overflow-x-auto">
-                <h1 class="text-center mb-8 text-5xl font-bold">LISTADO DE COMPRAS</h1>
+            <div class="bg-white p-6 rounded-lg shadow-md overflow-x-auto m-3" style="max-width: 1100px;">
+                <h1 class="text-center mb-4 text-5xl font-semibold">LISTADO DE COMPRAS</h1>
                 <div class="table-container table-striped table-responsive">
                     <table class="table-auto m-2 w-full whitespace-no-wrap ">
                         <thead>
                             <tr class="border">
-                                <th class="px-5 py-3 border">Criptomoneda</th>
-                                <th class="px-5 py-3 border">Precio</th>
-                                <th class="px-5 py-3 border">Cantidad</th>
-                                <th class="px-5 py-3 border">Dirección de la Cartera</th>
+                                <th class="px-5 py-3 border text-center align-middle p-4 bg-blue-200">Criptomoneda</th>
+                                <th class="px-5 py-3 border text-center align-middle p-4 bg-blue-200">Precio (USD)</th>
+                                <th class="px-5 py-3 border text-center align-middle p-4 bg-blue-200">Cantidad</th>
+                                <th class="px-5 py-3 border text-center align-middle p-4 bg-blue-200">Dirección de la Cartera</th>
                             </tr>
                         </thead>
                         <tbody>
                             <% data.forEach(item => { %>
                                 <tr>
-                                    <td class="border px-5 py-3"><%= item.criptomoneda %></td>
-                                    <td class="border px-5 py-3"><%= item.precio %></td>
-                                    <td class="border px-5 py-3"><%= item.cantidad %></td>
-                                    <td class="border px-5 py-3"><%= item.direccion %></td>
+                                    <td class="border px-5 py-3 text-center align-middle"><%= item.criptomoneda %></td>
+                                    <td class="border px-5 py-3 text-center align-middle">$<%= item.precio %></td>
+                                    <td class="border px-5 py-3 text-center align-middle"><%= item.cantidad %></td>
+                                    <td class="border px-5 py-3 text-center align-middle"><%= item.direccion %></td>
                                 </tr>
                             <% }); %>
                         </tbody>

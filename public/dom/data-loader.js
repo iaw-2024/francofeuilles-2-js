@@ -18,7 +18,7 @@ function agregarCompraATabla(compra, tbody) {
     
     // Agregar celdas para cada propiedad
     agregarCelda(newRow, compra.criptomoneda);
-    agregarCelda(newRow, compra.precio);
+    agregarCelda(newRow, "$" + compra.precio);
     agregarCelda(newRow, compra.cantidad);
     agregarCelda(newRow, compra.direccion);
     
@@ -29,6 +29,7 @@ function agregarCompraATabla(compra, tbody) {
 function agregarCelda(fila, contenido) {
     var cell = document.createElement('td');
     cell.textContent = contenido;
+    cell.classList.add("p-3", "text-center", "align-middle");
     fila.appendChild(cell);
 }
 

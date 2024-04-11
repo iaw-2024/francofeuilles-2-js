@@ -7,7 +7,7 @@ function cargarDatosEnTabla(compras) {
 function agregarCompraATabla(compra, tbody) {
     var newRow = document.createElement('tr');
     agregarCelda(newRow, compra.criptomoneda);
-    agregarCelda(newRow, compra.precio);
+    agregarCelda(newRow, "$" + compra.precio);
     agregarCelda(newRow, compra.cantidad);
     agregarCelda(newRow, compra.direccion);
     tbody.appendChild(newRow);
@@ -16,6 +16,7 @@ function agregarCompraATabla(compra, tbody) {
 function agregarCelda(fila, contenido) {
     var cell = document.createElement('td');
     cell.textContent = contenido;
+    cell.classList.add("p-3", "text-center", "align-middle");
     fila.appendChild(cell);
 }
 
