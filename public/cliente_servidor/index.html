@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado DOM</title>
+    <title>Listado Cliente Servidor</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../dom/style.css">
+    <link rel="stylesheet" href="../dom/style.css"> <!-- Utilizo el mismo style.css de la solucion de DOM -->
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-roboto-flex">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -18,17 +18,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../express">EXPRESS</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">DOM <span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../dom">DOM</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../cliente_servidor">CLIENTE-SERVIDOR</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">CLIENTE-SERVIDOR <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="centered-table p-2 shadow-md font-roboto-flex ">
+    <div class="centered-table p-2 shadow-md overflow-x-auto">
         <div class="table-container table-striped table-responsive">
             <h1>LISTADO DE COMPRAS</h1>
             <table id="cryptoTable" class="table table-bordered">
@@ -49,7 +49,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="../dom/data.js"></script> 
-    <script src="../dom/data-loader.js"></script><!-- Aquí se incluye el archivo data-loader.js para manipular el DOM -->
+    <script src="../cliente_servidor/data-loader.js"></script>
 </body>
 </html>
